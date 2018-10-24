@@ -1,10 +1,35 @@
-function setup() {
-      createCanvas(900,900);
-      background(255,255,255);
-      rect(0,0,400,050);
-      fill(1);
-      rect(0,500,400,400);
-      fill(255);
-      rect(400,0,500,500);
-      fill(1);
-    }
+var eyeSize = 20;
+var faceWidth = 100;
+var faceHeight = 150;
+var x = 150;
+var y = 150;
+
+function setup(){
+  createCanvas (300,300);
+}
+
+function draw(){
+  background(180);
+  fill('#fae');
+  ellipse(x, y, faceWidth, faceHeight);
+
+fill(color(0, 0, 255));
+   var eyeLX = width/2 - faceWidth*0.20;
+    var eyeRX = width/2 + faceWidth*0.20;
+    ellipse(eyeLX, height/2, eyeSize, eyeSize);
+    ellipse(eyeRX, height/2, eyeSize, eyeSize);
+
+  // munur
+  fill('red');
+  arc(160, 180, 15, 15, 0, PI + QUARTER_PI, PIE);
+
+  //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
+
+}
+
+function mousePressed(){
+  //Í hvert sinn sem músinni er smellt fá breyturnar ný gildi.
+  faceWidth  = random(75,  150);
+  faceHeight = random(100, 200);
+  eyeSize    = random(10,  30);
+}
