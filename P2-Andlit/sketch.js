@@ -10,7 +10,7 @@ function setup(){
 }
 
 function draw(){
-  background(180);
+  background('rgb(0,255,0)');
   fill('#fae');
   ellipse(x, y, faceWidth, faceHeight);
 
