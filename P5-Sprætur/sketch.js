@@ -1,21 +1,6 @@
+function preload() {
+  mynd = loadImage('assets/isbjorn.jpg'); // https://www.google.is/search?q=polar+bear+cartoon&source=lnms&tbm=isch&sa=X&ved=0ahUKEwim8pG988HeAhVLPFAKHbtuC1UQ_AUIDigB&biw=1536&bih=723#imgdii=LUul2SHIxzlvYM:&imgrc=2sLNdphTpI8qaM:
+}
 function setup() {
-	createCanvas(700, 500);
-	noStroke();
-}
-
-function draw() {
-	background(255, 600, 0);
-	fill(136, 136, 914);
-	if(mouseX < width/2 && mouseY < height / 2){
-		rect(0,0,width/2,height/2);
-	}
-	if(mouseX > width/2 && mouseY < height / 2){
-		rect(width/2,0,width/2,height/2);
-	}
-	if(mouseX < width/2 && mouseY > height / 2){
-		rect(0,height/2,width/2,height/2);
-	}
-	if(mouseX > width/2 && mouseY > height / 2){
-		rect(width/2,height/2,width/2,height/2);
-	}
-}
+  createCanvas(700,450);
+  background(isbjorn);
