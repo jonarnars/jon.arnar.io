@@ -6,3 +6,5 @@ function preload() {
 function setup() {
   createCanvas(700,450);
   background(isbjorn);
+  }
+  
