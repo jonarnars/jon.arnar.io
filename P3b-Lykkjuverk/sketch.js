@@ -12,5 +12,6 @@ function draw() {
       for(var z = 0; z < 200; z = z + 10) {
       fill(random(0,360),360,360);
       ellipse(x-z,y+z, x-20,y-z);
-  }  
+  }
+  }
   }
