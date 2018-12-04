@@ -3,7 +3,7 @@ var bobs = [];
 function setup() {
   createCanvas(600, 600);
   // Búum til hundrað zoog hluti.
-  for (var i = 0; i < 10; i = i+1){
+  for (var i = 0; i < 50; i = i+1){
     bobs[i] = new Bob(random(200,400),random(100,400),random(50,200));
   }
 }
