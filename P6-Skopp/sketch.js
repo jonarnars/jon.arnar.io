@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(255,0,0);
+  background(50,205,50);
 	// Reikna ný hnit út frá hraða boltans:
   x = x + hradiX;
   y = y + hradiY;
